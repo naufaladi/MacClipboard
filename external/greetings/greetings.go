@@ -8,7 +8,7 @@ import (
 
 func Hello(name string) (string, error) {
 	if name == "" {
-		return "error", errors.New("name cannot be empty")
+		return "", errors.New("name cannot be empty")
 	}
 	message := fmt.Sprintf(randomGreeting(), name)
 
