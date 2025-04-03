@@ -3,7 +3,7 @@ module github.com/MacClipboard
 go 1.24.1
 
 require (
-	example.com/greetingtest v0.0.0-00010101000000-000000000000
+	example.com/greetings v0.0.0-00010101000000-000000000000
 	rsc.io/quote v1.5.2
 )
 
@@ -12,4 +12,4 @@ require (
 	rsc.io/sampler v1.3.0 // indirect
 )
 
-replace example.com/greetingtest => ../greetingtest
+replace example.com/greetings => ./external/greetings

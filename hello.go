@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"example.com/greetingtest"
+	"example.com/greetings"
 	"rsc.io/quote"
 )
 
@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println("Hello bich")
 	fmt.Println(quote.Go())
-	messages, err := greeting.Hellos([]string{"Jack", "Jill", "Joko"})
+	messages, err := greetings.Hellos([]string{"Jack", "Jill", "Joko"})
 	if err != nil {
 		log.Fatal(err)
 	}
