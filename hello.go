@@ -10,15 +10,17 @@ import (
 
 func main() {
 
-	log.SetPrefix("HAHAHAHA: ")
+	log.SetPrefix("greetings: ")
 	log.SetFlags(0) // do not show timestamp
 
 	fmt.Println("Hello bich")
 	fmt.Println(quote.Go())
-	message, err := greeting.Hello("")
+	messages, err := greeting.Hellos([]string{"Jack", "Jill", "Joko"})
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(message)
+	for _, message := range messages {
+		fmt.Println(message)
+	}
 }
